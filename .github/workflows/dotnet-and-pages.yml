@@ -50,4 +50,4 @@ jobs:
           path: './out'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@
+        uses: actions/deploy-pages@v1
