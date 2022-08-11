@@ -29,7 +29,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Install Chloroplast
-      run: dotnet tool install Chloroplast.Tool
+      run: dotnet tool install Chloroplast.Tool --global
     - name: Build site
       run: chloroplast build
 
