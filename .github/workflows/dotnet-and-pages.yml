@@ -30,6 +30,8 @@ jobs:
       run: dotnet tool install Chloroplast.Tool --global
     - name: Build site
       run: chloroplast build
+    - name: "DEBUG: list output files"
+      run: ls ./out
 
   deploy:
     needs: build
