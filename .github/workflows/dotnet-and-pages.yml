@@ -33,13 +33,8 @@ jobs:
       run: dotnet tool install Chloroplast.Tool --global
     - name: Build site
       run: chloroplast build
-    - name: "DEBUG: list output files"
-      run: ls ./out
-    - name: Upload artifact for deployment job
-      uses: actions/upload-artifact@v3
-      with:
-        name: Chloroplast output
-        path: ./out
+    #- name: "DEBUG: list output files"
+    #  run: ls ./out
     - name: Setup Pages
       uses: actions/configure-pages@v1
     - name: Upload Pages artifact
