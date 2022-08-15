@@ -1,0 +1,7 @@
+title: Attempting to get Chloroplast building with GitHub Actions and hosting with GitHub Pages.
+
+templates_folder: /templates
+
+areas:
+  - source_folder: /source
+    output_folder: /
