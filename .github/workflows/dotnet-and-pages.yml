@@ -32,6 +32,11 @@ jobs:
       run: chloroplast build
     - name: "DEBUG: list output files"
       run: ls ./out
+    - name: Upload artifact for deployment job
+      uses: actions/upload-artifact@v3
+      with:
+        name: Chloroplast site
+        path: ./out
 
   deploy:
     needs: build
