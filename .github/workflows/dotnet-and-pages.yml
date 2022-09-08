@@ -28,7 +28,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: .NET SDK install
-      run: sudo apt-get update && sudo apt-get install -y dotnet6
+      run: sudo apt-get install -y dotnet-sdk-6.0
     - name: Install Chloroplast
       run: dotnet tool install Chloroplast.Tool --global
     - name: Build site
